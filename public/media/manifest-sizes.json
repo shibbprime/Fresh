@@ -299,19 +299,45 @@
       }
     }
   },
-  "gallery-apple-valley-roofing-aerial": {
-    "width": 1600,
-    "height": 1200,
+  "gallery-credit-river-new-roof": {
+    "width": 1920,
+    "height": 1040,
     "variants": {
       "800": {
-        "webp": 54768,
-        "avif": 35797,
-        "jpg": 97371
+        "webp": 47108,
+        "avif": 25666,
+        "jpg": 71221
       },
       "1600": {
-        "webp": 198664,
-        "avif": 150157,
-        "jpg": 344833
+        "webp": 134638,
+        "avif": 77011,
+        "jpg": 229545
+      },
+      "1920": {
+        "webp": 188752,
+        "avif": 110624,
+        "jpg": 303417
+      }
+    }
+  },
+  "gallery-credit-river-craftsman-exterior": {
+    "width": 2400,
+    "height": 1500,
+    "variants": {
+      "800": {
+        "webp": 78372,
+        "avif": 40508,
+        "jpg": 100799
+      },
+      "1600": {
+        "webp": 289550,
+        "avif": 152344,
+        "jpg": 376539
+      },
+      "2400": {
+        "webp": 581818,
+        "avif": 305993,
+        "jpg": 755237
       }
     }
   }

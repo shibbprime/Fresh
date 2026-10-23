@@ -40,7 +40,8 @@ GALLERY = [
     "gallery-bloomington-walk-in-shower.jpg",
     "gallery-credit-river-navy-siding.jpg",
     "gallery-burnsville-home-theater.jpg",
-    "gallery-apple-valley-roofing-aerial.jpg",
+    "gallery-credit-river-new-roof.jpg",
+    "gallery-credit-river-craftsman-exterior.jpg",
 ]
 
 
@@ -110,7 +111,7 @@ def main() -> int:
         stem = Path(name).stem
         # Credit River is already ≤1200 — keep widths ≤1200
         widths = GALLERY_WIDTHS
-        if "credit-river" in name:
+        if "credit-river-navy-siding" in name:
             widths = (800, 1200)
         report[stem] = emit_set(stem, name, widths)
 
