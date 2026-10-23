@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bischel Building | Roofing &amp; General Contracting · Farmington, MN</title>
+    <title>Farmington MN General Contractor | Bischel Building</title>
     <meta
       name="description"
-      content="Family-owned roofing and general contracting in Farmington and Lakeville since 2005. Premium craftsmanship for homes and businesses across the south metro."
+      content="Family-owned general contractor in Farmington, MN since 2005. Roofing, storm repair, and remodeling for homes and businesses around Lakeville and Farmington."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +14,24 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="public/media/hero-poster-sm.webp" type="image/webp" media="(max-width: 720px)" />
-    <link rel="preload" as="image" href="public/media/hero-poster.webp" type="image/webp" media="(min-width: 721px)" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      href="public/media/hero-mobile-rosemount-outdoor-fireplace-640.avif"
+      media="(max-width: 720px)"
+      imagesrcset="public/media/hero-mobile-rosemount-outdoor-fireplace-640.avif 640w, public/media/hero-mobile-rosemount-outdoor-fireplace-1080.avif 1080w"
+      imagesizes="100vw"
+    />
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      href="public/media/hero-rosemount-outdoor-fireplace-1280.avif"
+      media="(min-width: 721px)"
+      imagesrcset="public/media/hero-rosemount-outdoor-fireplace-640.avif 640w, public/media/hero-rosemount-outdoor-fireplace-1280.avif 1280w, public/media/hero-rosemount-outdoor-fireplace-1920.avif 1920w, public/media/hero-rosemount-outdoor-fireplace-2560.avif 2560w"
+      imagesizes="100vw"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -30,52 +46,267 @@
         <nav class="nav" aria-label="Primary">
           <a href="#services">Services</a>
           <a href="#craft">Craft</a>
+          <a href="#gallery">Our work</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="header-phone" href="tel:+16514638762">(651) 463-8762</a>
+        <a class="header-phone" href="tel:+16514638762" data-cta-id="header_call">(651) 463-8762</a>
       </div>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-label="Introduction">
         <div class="hero-media" aria-hidden="true">
-          <picture>
-            <source media="(max-width: 720px)" srcset="public/media/hero-poster-sm.webp" type="image/webp" />
+          <picture class="hero-poster">
+            <source
+              media="(max-width: 720px)"
+              type="image/avif"
+              srcset="
+                public/media/hero-mobile-rosemount-outdoor-fireplace-640.avif 640w,
+                public/media/hero-mobile-rosemount-outdoor-fireplace-1080.avif 1080w
+              "
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 720px)"
+              type="image/webp"
+              srcset="
+                public/media/hero-mobile-rosemount-outdoor-fireplace-640.webp 640w,
+                public/media/hero-mobile-rosemount-outdoor-fireplace-1080.webp 1080w
+              "
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 720px)"
+              type="image/jpeg"
+              srcset="
+                public/media/hero-mobile-rosemount-outdoor-fireplace-640.jpg 640w,
+                public/media/hero-mobile-rosemount-outdoor-fireplace-1080.jpg 1080w
+              "
+              sizes="100vw"
+            />
+            <source
+              type="image/avif"
+              srcset="
+                public/media/hero-rosemount-outdoor-fireplace-640.avif 640w,
+                public/media/hero-rosemount-outdoor-fireplace-1280.avif 1280w,
+                public/media/hero-rosemount-outdoor-fireplace-1920.avif 1920w,
+                public/media/hero-rosemount-outdoor-fireplace-2560.avif 2560w
+              "
+              sizes="100vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                public/media/hero-rosemount-outdoor-fireplace-640.webp 640w,
+                public/media/hero-rosemount-outdoor-fireplace-1280.webp 1280w,
+                public/media/hero-rosemount-outdoor-fireplace-1920.webp 1920w,
+                public/media/hero-rosemount-outdoor-fireplace-2560.webp 2560w
+              "
+              sizes="100vw"
+            />
             <img
-              class="hero-poster"
-              src="public/media/hero-poster.webp"
+              src="public/media/hero-rosemount-outdoor-fireplace-1280.jpg"
+              srcset="
+                public/media/hero-rosemount-outdoor-fireplace-640.jpg 640w,
+                public/media/hero-rosemount-outdoor-fireplace-1280.jpg 1280w,
+                public/media/hero-rosemount-outdoor-fireplace-1920.jpg 1920w,
+                public/media/hero-rosemount-outdoor-fireplace-2560.jpg 2560w
+              "
+              sizes="100vw"
+              width="2560"
+              height="1636"
               alt=""
-              width="1600"
-              height="900"
               fetchpriority="high"
               decoding="async"
             />
           </picture>
-          <video
-            class="hero-video"
-            data-hero-video
-            muted
-            playsinline
-            loop
-            preload="none"
-            poster="public/media/hero-poster.webp"
-          >
-            <source src="public/media/hero-loop.webm" type="video/webm" />
-            <source src="public/media/hero-loop.mp4" type="video/mp4" />
-          </video>
+
+          <div class="hero-kenburns" data-hero-motion hidden>
+            <div class="kb-slide is-active" data-motion="push-in" data-object-x="50">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    public/media/loop-01-rosemount-outdoor-fireplace-640.avif 640w,
+                    public/media/loop-01-rosemount-outdoor-fireplace-1280.avif 1280w,
+                    public/media/loop-01-rosemount-outdoor-fireplace-1920.avif 1920w,
+                    public/media/loop-01-rosemount-outdoor-fireplace-2560.avif 2560w
+                  "
+                  sizes="100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    public/media/loop-01-rosemount-outdoor-fireplace-640.webp 640w,
+                    public/media/loop-01-rosemount-outdoor-fireplace-1280.webp 1280w,
+                    public/media/loop-01-rosemount-outdoor-fireplace-1920.webp 1920w,
+                    public/media/loop-01-rosemount-outdoor-fireplace-2560.webp 2560w
+                  "
+                  sizes="100vw"
+                />
+                <img
+                  src="public/media/loop-01-rosemount-outdoor-fireplace-1280.jpg"
+                  alt=""
+                  width="2560"
+                  height="1636"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="kb-slide" data-motion="push" data-object-x="50">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    public/media/loop-02-rosemount-navy-kitchen-640.avif 640w,
+                    public/media/loop-02-rosemount-navy-kitchen-1280.avif 1280w,
+                    public/media/loop-02-rosemount-navy-kitchen-1920.avif 1920w,
+                    public/media/loop-02-rosemount-navy-kitchen-2560.avif 2560w
+                  "
+                  sizes="100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    public/media/loop-02-rosemount-navy-kitchen-640.webp 640w,
+                    public/media/loop-02-rosemount-navy-kitchen-1280.webp 1280w,
+                    public/media/loop-02-rosemount-navy-kitchen-1920.webp 1920w,
+                    public/media/loop-02-rosemount-navy-kitchen-2560.webp 2560w
+                  "
+                  sizes="100vw"
+                />
+                <img
+                  src="public/media/loop-02-rosemount-navy-kitchen-1280.jpg"
+                  alt=""
+                  width="2560"
+                  height="1530"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="kb-slide" data-motion="drift-lr" data-object-x="50">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    public/media/loop-03-apple-valley-deck-aerial-640.avif 640w,
+                    public/media/loop-03-apple-valley-deck-aerial-1280.avif 1280w,
+                    public/media/loop-03-apple-valley-deck-aerial-1920.avif 1920w,
+                    public/media/loop-03-apple-valley-deck-aerial-2560.avif 2560w
+                  "
+                  sizes="100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    public/media/loop-03-apple-valley-deck-aerial-640.webp 640w,
+                    public/media/loop-03-apple-valley-deck-aerial-1280.webp 1280w,
+                    public/media/loop-03-apple-valley-deck-aerial-1920.webp 1920w,
+                    public/media/loop-03-apple-valley-deck-aerial-2560.webp 2560w
+                  "
+                  sizes="100vw"
+                />
+                <img
+                  src="public/media/loop-03-apple-valley-deck-aerial-1280.jpg"
+                  alt=""
+                  width="2560"
+                  height="1566"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="kb-slide" data-motion="pan-fireplace" data-object-x="65">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    public/media/loop-04-farmington-four-season-porch-640.avif 640w,
+                    public/media/loop-04-farmington-four-season-porch-1280.avif 1280w,
+                    public/media/loop-04-farmington-four-season-porch-1920.avif 1920w,
+                    public/media/loop-04-farmington-four-season-porch-2560.avif 2560w
+                  "
+                  sizes="100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    public/media/loop-04-farmington-four-season-porch-640.webp 640w,
+                    public/media/loop-04-farmington-four-season-porch-1280.webp 1280w,
+                    public/media/loop-04-farmington-four-season-porch-1920.webp 1920w,
+                    public/media/loop-04-farmington-four-season-porch-2560.webp 2560w
+                  "
+                  sizes="100vw"
+                />
+                <img
+                  src="public/media/loop-04-farmington-four-season-porch-1280.jpg"
+                  alt=""
+                  width="2560"
+                  height="1539"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="kb-slide" data-motion="pull-out" data-object-x="40">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    public/media/loop-05-bloomington-open-kitchen-640.avif 640w,
+                    public/media/loop-05-bloomington-open-kitchen-1280.avif 1280w,
+                    public/media/loop-05-bloomington-open-kitchen-1920.avif 1920w,
+                    public/media/loop-05-bloomington-open-kitchen-2560.avif 2560w
+                  "
+                  sizes="100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    public/media/loop-05-bloomington-open-kitchen-640.webp 640w,
+                    public/media/loop-05-bloomington-open-kitchen-1280.webp 1280w,
+                    public/media/loop-05-bloomington-open-kitchen-1920.webp 1920w,
+                    public/media/loop-05-bloomington-open-kitchen-2560.webp 2560w
+                  "
+                  sizes="100vw"
+                />
+                <img
+                  src="public/media/loop-05-bloomington-open-kitchen-1280.jpg"
+                  alt=""
+                  width="2560"
+                  height="1522"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
           <div class="hero-veil"></div>
         </div>
 
         <div class="hero-content">
-          <p class="brand-lockup">Bischel Building</p>
-          <h1>Roofing and contracting, finished to a higher standard.</h1>
+          <ul class="hero-badges" aria-label="Trust">
+            <li>Family Owned &amp; Operated Since 2005</li>
+            <li>Licensed MN Contractor</li>
+          </ul>
+          <h1>Roofing, Storm Repair &amp; Remodeling in Farmington &amp; Lakeville, MN</h1>
+          <p class="hero-subhead">
+            A family-owned general contractor since 2005, serving homes and businesses around Lakeville and Farmington.
+          </p>
           <p class="hero-lede">
-            Family-owned in Farmington since 2005 — storm-ready roofs, refined exteriors, and whole-home builds for the south metro.
+            Hail on the roof or a remodel you've been planning, one local team inspects, gives you a free itemized estimate and does the work. Our office is in downtown Farmington, so we're close by in storm season and still here long after the job is done.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+16514638762">Call for an estimate</a>
-            <a class="btn btn-ghost" href="#services">Explore services</a>
+            <a
+              class="btn btn-primary"
+              href="https://bischelbuilding.com/contact/?need=storm"
+              data-cta-id="hero_storm_inspection"
+              >Free Storm Damage Inspection</a
+            >
+            <a class="btn btn-ghost" href="tel:+16514638762" data-cta-id="hero_call">Call (651) 463-8762</a>
           </div>
+          <p class="hero-secondary-link">
+            <a href="https://bischelbuilding.com/contact/" data-cta-id="hero_free_estimate_link"
+              >Not storm damage? Request a Free Estimate ›</a
+            >
+          </p>
         </div>
       </section>
 
@@ -84,15 +315,49 @@
           <p class="eyebrow">What we build</p>
           <h2>Roofing first. Full contracting when the job asks for it.</h2>
           <p class="section-lede">
-            From a precise tear-off to a coordinated remodel, one team plans the work, protects the property, and stands behind the finish.
+            From a precise tear-off to a coordinated remodel, our team plans the work, protects the property, and stands behind the finish — for homes and businesses within 60 miles of Farmington &amp; Lakeville.
           </p>
 
           <ul class="service-list">
-            <li>
+            <li class="service-with-media">
               <span class="service-index">01</span>
-              <div>
+              <div class="service-body">
                 <h3>Roofing</h3>
                 <p>Replacement, repair, ventilation, and gutters on shingle, metal, flat, and specialty roofs.</p>
+                <figure class="service-figure">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        public/media/gallery-apple-valley-roofing-aerial-800.avif 800w,
+                        public/media/gallery-apple-valley-roofing-aerial-1600.avif 1600w
+                      "
+                      sizes="(max-width: 720px) 100vw, 42rem"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        public/media/gallery-apple-valley-roofing-aerial-800.webp 800w,
+                        public/media/gallery-apple-valley-roofing-aerial-1600.webp 1600w
+                      "
+                      sizes="(max-width: 720px) 100vw, 42rem"
+                    />
+                    <img
+                      src="public/media/gallery-apple-valley-roofing-aerial-800.jpg"
+                      srcset="
+                        public/media/gallery-apple-valley-roofing-aerial-800.jpg 800w,
+                        public/media/gallery-apple-valley-roofing-aerial-1600.jpg 1600w
+                      "
+                      sizes="(max-width: 720px) 100vw, 42rem"
+                      width="1600"
+                      height="1200"
+                      alt="Close aerial view of a new slate-style shingle roof with rows of snow guards above a composite deck"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <figcaption>Apple Valley, MN · Roofing</figcaption>
+                </figure>
               </div>
             </li>
             <li>
@@ -123,68 +388,320 @@
       <section class="section craft" id="craft">
         <div class="craft-grid">
           <figure class="craft-visual">
-            <img
-              src="public/media/roof-detail.webp"
-              alt="Close detail of premium architectural roofing shingles with metal flashing"
-              width="1200"
-              height="900"
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-rosemount-stone-fireplace-800.avif 800w,
+                  public/media/gallery-rosemount-stone-fireplace-1600.avif 1600w
+                "
+                sizes="(max-width: 900px) 100vw, 50vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-rosemount-stone-fireplace-800.webp 800w,
+                  public/media/gallery-rosemount-stone-fireplace-1600.webp 1600w
+                "
+                sizes="(max-width: 900px) 100vw, 50vw"
+              />
+              <img
+                src="public/media/gallery-rosemount-stone-fireplace-800.jpg"
+                srcset="
+                  public/media/gallery-rosemount-stone-fireplace-800.jpg 800w,
+                  public/media/gallery-rosemount-stone-fireplace-1600.jpg 1600w
+                "
+                sizes="(max-width: 900px) 100vw, 50vw"
+                width="1600"
+                height="1008"
+                alt="Close-up of a hand-laid stacked-stone fireplace arch with a split-wood firebox"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </figure>
           <div class="craft-copy">
             <p class="eyebrow">The Bischel approach</p>
-            <h2>Quiet luxury in the details you live under every day.</h2>
+            <h2>Quiet luxury in the details you live with every day.</h2>
             <p>
               We listen first, write a custom plan, and coordinate every trade — so the roof, the envelope, and the rooms inside feel like one composed project, not a patchwork of bids.
             </p>
             <ul class="trust-points">
               <li>Family owned &amp; operated since 2005</li>
-              <li>BBB accredited · MN License BC634092</li>
+              <li>Licensed Minnesota contractor</li>
               <li>Homes &amp; commercial within 60 miles of Farmington &amp; Lakeville</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="section gallery" aria-label="Selected work">
+      <section class="section gallery" id="gallery" aria-label="Our work">
         <div class="section-inner">
-          <p class="eyebrow">Selected work</p>
-          <h2>Spaces shaped with care.</h2>
+          <p class="eyebrow">Our work</p>
+          <h2>Real projects from Bischel Building.</h2>
+          <p class="section-lede">Photographs from jobs our team completed — not stock, not AI.</p>
         </div>
-        <div class="gallery-strip">
+        <div class="gallery-grid">
           <figure>
-            <img
-              src="public/media/kitchen-remodel.webp"
-              alt="Luxury kitchen remodel with walnut cabinetry and brass fixtures"
-              width="1200"
-              height="900"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Kitchen remodel</figcaption>
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-rosemount-stone-fireplace-800.avif 800w,
+                  public/media/gallery-rosemount-stone-fireplace-1600.avif 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-rosemount-stone-fireplace-800.webp 800w,
+                  public/media/gallery-rosemount-stone-fireplace-1600.webp 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-rosemount-stone-fireplace-800.jpg"
+                alt="Close-up of a hand-laid stacked-stone fireplace arch with a split-wood firebox"
+                width="1600"
+                height="1008"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Rosemount, MN · Outdoor fireplace</figcaption>
           </figure>
           <figure>
-            <img
-              src="public/media/siding-craft.webp"
-              alt="Craftsperson installing fiber cement siding on a contemporary home"
-              width="1200"
-              height="900"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Exterior craft</figcaption>
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-lakeville-custom-cabinets-800.avif 800w,
+                  public/media/gallery-lakeville-custom-cabinets-1600.avif 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-lakeville-custom-cabinets-800.webp 800w,
+                  public/media/gallery-lakeville-custom-cabinets-1600.webp 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-lakeville-custom-cabinets-800.jpg"
+                alt="Blue-gray custom cabinetry and built-ins with open wood shelves beside French doors"
+                width="1600"
+                height="1013"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Lakeville, MN · Custom cabinetry</figcaption>
           </figure>
           <figure>
-            <img
-              src="public/media/roof-detail.webp"
-              alt="Architectural shingle roof detail"
-              width="1200"
-              height="900"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Roof systems</figcaption>
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-apple-valley-constellation-coffee-800.avif 800w,
+                  public/media/gallery-apple-valley-constellation-coffee-1600.avif 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-apple-valley-constellation-coffee-800.webp 800w,
+                  public/media/gallery-apple-valley-constellation-coffee-1600.webp 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-apple-valley-constellation-coffee-800.jpg"
+                alt="Bright coffee shop interior with a white service counter, modern chandelier and track lighting"
+                width="1600"
+                height="1134"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Apple Valley, MN · Constellation Coffee (commercial build-out)</figcaption>
+          </figure>
+          <figure class="tile-tall">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-apple-valley-composite-deck-800.avif 800w,
+                  public/media/gallery-apple-valley-composite-deck-1559.avif 1559w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-apple-valley-composite-deck-800.webp 800w,
+                  public/media/gallery-apple-valley-composite-deck-1559.webp 1559w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-apple-valley-composite-deck-800.jpg"
+                alt="Composite deck with Adirondack chairs along tall stucco walls and floor-to-ceiling windows"
+                width="1559"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Apple Valley, MN · Composite deck</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-burnsville-basement-wet-bar-800.avif 800w,
+                  public/media/gallery-burnsville-basement-wet-bar-1600.avif 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-burnsville-basement-wet-bar-800.webp 800w,
+                  public/media/gallery-burnsville-basement-wet-bar-1600.webp 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-burnsville-basement-wet-bar-800.jpg"
+                alt="Basement wet bar with cherry cabinetry, stone-tile backsplash, granite counters and a wood-paneled booth"
+                width="1600"
+                height="920"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Burnsville, MN · Basement finish</figcaption>
+          </figure>
+          <figure class="tile-tall">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-bloomington-walk-in-shower-800.avif 800w,
+                  public/media/gallery-bloomington-walk-in-shower-1178.avif 1178w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-bloomington-walk-in-shower-800.webp 800w,
+                  public/media/gallery-bloomington-walk-in-shower-1178.webp 1178w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-bloomington-walk-in-shower-800.jpg"
+                alt="Walk-in shower with large-format marble-look tile, black fixtures and a dark tile floor"
+                width="1178"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Bloomington, MN · Bathroom remodel</figcaption>
+          </figure>
+          <figure class="tile-compact">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-credit-river-navy-siding-800.avif 800w,
+                  public/media/gallery-credit-river-navy-siding-1200.avif 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-credit-river-navy-siding-800.webp 800w,
+                  public/media/gallery-credit-river-navy-siding-1200.webp 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-credit-river-navy-siding-800.jpg"
+                alt="Two-story home with navy lap siding, cream trim, stone columns and a covered lower patio"
+                width="1200"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Credit River, MN · Siding &amp; exterior</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-burnsville-home-theater-800.avif 800w,
+                  public/media/gallery-burnsville-home-theater-1600.avif 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-burnsville-home-theater-800.webp 800w,
+                  public/media/gallery-burnsville-home-theater-1600.webp 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-burnsville-home-theater-800.jpg"
+                alt="Basement home theater with a large screen, tray ceiling with cove lighting and a leather sectional"
+                width="1600"
+                height="938"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Burnsville, MN · Basement home theater</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  public/media/gallery-apple-valley-roofing-aerial-800.avif 800w,
+                  public/media/gallery-apple-valley-roofing-aerial-1600.avif 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  public/media/gallery-apple-valley-roofing-aerial-800.webp 800w,
+                  public/media/gallery-apple-valley-roofing-aerial-1600.webp 1600w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+              />
+              <img
+                src="public/media/gallery-apple-valley-roofing-aerial-800.jpg"
+                alt="Close aerial view of a new slate-style shingle roof with rows of snow guards above a composite deck"
+                width="1600"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Apple Valley, MN · Roofing</figcaption>
           </figure>
         </div>
       </section>
@@ -194,23 +711,34 @@
           <p class="eyebrow">Begin the conversation</p>
           <h2>Ready when you are.</h2>
           <p class="section-lede">
-            Call the Farmington office or send a note — we’ll schedule a visit, measure carefully, and return a free written estimate.
+            Call the Farmington office or request online — our team will schedule a visit, measure carefully, and return a free written estimate.
           </p>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="tel:+16514638762">(651) 463-8762</a>
-            <a class="btn btn-ghost" href="mailto:bischel@bischelbuilding.com">bischel@bischelbuilding.com</a>
+            <a
+              class="btn btn-primary"
+              href="https://bischelbuilding.com/contact/?need=storm"
+              data-cta-id="contact_storm_inspection"
+              >Free Storm Damage Inspection</a
+            >
+            <a class="btn btn-ghost" href="tel:+16514638762" data-cta-id="contact_call">Call (651) 463-8762</a>
           </div>
+          <p class="hero-secondary-link">
+            <a href="https://bischelbuilding.com/contact/" data-cta-id="contact_free_estimate"
+              >Not storm damage? Request a Free Estimate ›</a
+            >
+          </p>
           <address>
             100 8th St · Farmington, MN 55024<br />
-            Mon–Fri 8:00–4:30 · Weekends by appointment
+            Mon–Fri 8:00–4:30 · Weekends by appointment<br />
+            Within 60 miles of Farmington &amp; Lakeville
           </address>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span data-year></span> Bischel Building, Inc. · Licensed Minnesota contractor BC634092</p>
-      <p class="footer-note">Serving Farmington, Lakeville, and the south metro.</p>
+      <p>© <span data-year></span> Bischel Building, Inc.</p>
+      <p class="footer-note">Serving homes and businesses around Lakeville and Farmington, MN.</p>
     </footer>
 
     <script src="main.js" defer></script>

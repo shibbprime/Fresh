@@ -1,6 +1,6 @@
 # Bischel Building — luxury landing page
 
-Fresh static landing page for **Bischel Building** (Farmington / Lakeville, MN): roofing-led general contracting with a high-end presentation.
+Static landing page for **Bischel Building** (Farmington / Lakeville, MN): roofing-led general contracting. Imagery is **real project photography** from Blake’s Grok Bot handoff (see `docs/IMAGE-MANIFEST.md`).
 
 ## Preview
 
@@ -9,15 +9,17 @@ npx --yes serve -l 4173 .
 # open http://localhost:4173
 ```
 
-Or open `index.html` directly in a browser.
-
 ## Structure
 
 - `index.html` / `styles.css` / `main.js` — page
-- `public/media/` — optimized WebP stills + ~170 KB WebM hero loop (+ MP4 fallback)
-- `assets/source/` — AI source stills (re-encode with `scripts/optimize-media.py`)
-- `docs/GROK-AND-AGENT-CONNECTIONS.md` — how to connect Grok bots, Drive, and other agents
+- `assets/source/` — master JPEGs (metadata-stripped)
+- `public/media/` — responsive AVIF / WebP / JPEG sets
+- `scripts/optimize-media.py` — regenerate variants
+- `docs/GROK-AND-AGENT-CONNECTIONS.md` — agent / Grok handoffs
+- `docs/IMAGE-MANIFEST.md` — roles, alt text, captions
 
 ## Fast hero media
 
-Poster paints first (preloaded WebP). The short muted WebM/MP4 loads after idle and is skipped on reduced motion / Save-Data / slow networks. See the docs file for sizes and the re-encode script.
+Poster paints first (mobile portrait vs desktop landscape preloads). CSS/JS Ken Burns over five loop stills starts after idle; skipped on reduced motion / Save-Data / slow networks. No video file required.
+
+Branch: `cursor/bischel-luxury-landing-dd19` · PR #1 — do not merge/deploy unless asked.
