@@ -256,14 +256,14 @@
     "height": 1600,
     "variants": {
       "800": {
-        "webp": 71830,
-        "avif": 53083,
-        "jpg": 134249
+        "webp": 67522,
+        "avif": 51521,
+        "jpg": 130520
       },
       "1178": {
-        "webp": 159992,
-        "avif": 127199,
-        "jpg": 285951
+        "webp": 155114,
+        "avif": 123501,
+        "jpg": 278888
       }
     }
   },
@@ -300,23 +300,18 @@
     }
   },
   "gallery-credit-river-new-roof": {
-    "width": 1920,
-    "height": 1040,
+    "width": 1200,
+    "height": 840,
     "variants": {
       "800": {
-        "webp": 47108,
-        "avif": 25666,
-        "jpg": 71221
+        "webp": 38390,
+        "avif": 20965,
+        "jpg": 69591
       },
-      "1600": {
-        "webp": 134638,
-        "avif": 77011,
-        "jpg": 229545
-      },
-      "1920": {
-        "webp": 188752,
-        "avif": 110624,
-        "jpg": 303417
+      "1200": {
+        "webp": 71084,
+        "avif": 43835,
+        "jpg": 137187
       }
     }
   },
@@ -338,6 +333,106 @@
         "webp": 581818,
         "avif": 305993,
         "jpg": 755237
+      }
+    }
+  },
+  "gallery-commercial-exterior": {
+    "width": 2000,
+    "height": 1250,
+    "variants": {
+      "800": {
+        "webp": 53096,
+        "avif": 30788,
+        "jpg": 80812
+      },
+      "1600": {
+        "webp": 139576,
+        "avif": 88395,
+        "jpg": 249256
+      },
+      "2000": {
+        "webp": 181226,
+        "avif": 118775,
+        "jpg": 349543
+      }
+    }
+  },
+  "gallery-stone-masonry": {
+    "width": 1200,
+    "height": 1705,
+    "variants": {
+      "800": {
+        "webp": 164980,
+        "avif": 87132,
+        "jpg": 226269
+      },
+      "1200": {
+        "webp": 308870,
+        "avif": 174172,
+        "jpg": 435145
+      }
+    }
+  },
+  "gallery-bloomington-whole-home-kitchen": {
+    "width": 2880,
+    "height": 2052,
+    "variants": {
+      "800": {
+        "webp": 49094,
+        "avif": 28783,
+        "jpg": 79894
+      },
+      "1600": {
+        "webp": 168792,
+        "avif": 99565,
+        "jpg": 293283
+      },
+      "2880": {
+        "webp": 556506,
+        "avif": 371083,
+        "jpg": 747283
+      }
+    }
+  },
+  "gallery-new-market-covered-porch": {
+    "width": 2304,
+    "height": 2880,
+    "variants": {
+      "800": {
+        "webp": 119992,
+        "avif": 71107,
+        "jpg": 171866
+      },
+      "1600": {
+        "webp": 395828,
+        "avif": 240025,
+        "jpg": 594726
+      },
+      "2304": {
+        "webp": 678582,
+        "avif": 423937,
+        "jpg": 1072015
+      }
+    }
+  },
+  "gallery-apple-valley-siding-sunroom": {
+    "width": 1920,
+    "height": 1440,
+    "variants": {
+      "800": {
+        "webp": 85912,
+        "avif": 37552,
+        "jpg": 122463
+      },
+      "1600": {
+        "webp": 315272,
+        "avif": 142755,
+        "jpg": 448457
+      },
+      "1920": {
+        "webp": 464980,
+        "avif": 236863,
+        "jpg": 618329
       }
     }
   }
