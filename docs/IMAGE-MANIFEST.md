@@ -1,4 +1,4 @@
-# Bischel Building – landing page web images
+# Bischel Building, Inc. – landing page web images
 
 All files are JPEG, progressive, q82, sRGB pixels, and contain **no metadata**. They were re-encoded from raw pixel data only. The only header segment is APP0/JFIF: no EXIF, GPS, XMP, IPTC or ICC.
 

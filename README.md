@@ -1,6 +1,6 @@
-# Bischel Building — luxury landing page
+# Bischel Building, Inc. — luxury landing page
 
-Static landing page for **Bischel Building** (Farmington / Lakeville, MN): roofing-led general contracting. Imagery is **real project photography** from Blake’s Grok Bot handoff (see `docs/IMAGE-MANIFEST.md`).
+Static landing page for **Bischel Building, Inc.** (Farmington / Lakeville, MN): general contracting with roofing and remodeling. Imagery is **real project photography** from Blake’s Grok Bot handoff (see `docs/IMAGE-MANIFEST.md`).
 
 ## Preview
 

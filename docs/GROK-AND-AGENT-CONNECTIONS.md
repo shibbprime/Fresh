@@ -61,4 +61,4 @@ Runtime (`main.js`):
 
 ## Domain note
 
-Public branding: **Bischel Building** / `bischelbuilding.com`.
+Public branding: **Bischel Building, Inc.** / `bischelbuilding.com`.
