@@ -560,11 +560,11 @@ a {
 
 /* Justified flex rows: each tile width follows its photo's aspect ratio at a ~400px row height. */
 .gallery-grid {
-  --row-h: 380px;
+  --row-h: 360px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.15rem 0.55rem;
-  padding: 0 1.25rem 0.5rem;
+  gap: 1.1rem 0.5rem;
+  padding: 0 1rem 0.5rem;
   max-width: 1180px;
   margin: 0 auto;
   align-items: flex-start;
@@ -575,10 +575,9 @@ a {
   --ar: 1.5;
   --pos: 50% 50%;
   margin: 0;
-  /* Grow slightly to fill a row; shrink up to ~8% so two landscapes can share 1440 */
-  flex: 1 1 calc(var(--row-h) * var(--ar));
+  /* Fixed tile size from aspect ratio — never grow alone to full row width */
+  flex: 0 1 auto;
   width: calc(var(--row-h) * var(--ar));
-  min-width: min(100%, calc(var(--row-h) * var(--ar) * 0.92));
   max-width: 100%;
   background: transparent;
 }
@@ -697,7 +696,7 @@ a {
   }
 
   .gallery-grid {
-    --row-h: clamp(360px, 24vw, 420px);
+    --row-h: clamp(360px, 22vw, 420px);
   }
 }
 
