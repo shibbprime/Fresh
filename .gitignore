@@ -1,0 +1,4 @@
+.DS_Store
+node_modules/
+public/media/hero-ffmpeg-src.jpg
+*.log
