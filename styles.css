@@ -70,6 +70,8 @@ a {
   z-index: 40;
   height: var(--header-h);
   transition: background 0.4s var(--ease), backdrop-filter 0.4s var(--ease), border-color 0.4s var(--ease);
+  /* Dark backing from load so the brass phone number clears 4.5:1 on every hero frame */
+  background: rgba(14, 16, 18, 0.78);
   border-bottom: 1px solid transparent;
 }
 
@@ -816,5 +818,62 @@ a {
 
   .kb-slide[data-object-x] img {
     object-position: calc(var(--object-x, 50) * 1%) center;
+  }
+}
+
+/* Commercial: two photos stacked in the figure column */
+.service-figures {
+  display: grid;
+  gap: 1.1rem;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .service-figures {
+    max-width: 24rem;
+    justify-self: end;
+  }
+}
+
+/* Hero paragraph: shown in the hero on larger screens, moved to the Services intro on phones */
+.hero-lede--mobile {
+  display: none;
+}
+
+@media (max-width: 719px) {
+  .hero-lede--desktop {
+    display: none;
+  }
+
+  .hero-lede--mobile {
+    display: block;
+    margin: 0 0 1.75rem;
+    max-width: 38rem;
+  }
+
+  .hero-badges li + li {
+    display: none;
+  }
+
+  .logo-line-2 {
+    font-size: 11.5px;
+    letter-spacing: 0.3em;
+  }
+
+  /* Deeper veil on the phone poster so the brass tagline clears 4.5:1 */
+  .hero-veil {
+    background:
+      linear-gradient(180deg, rgba(10, 12, 14, 0.55) 0%, rgba(10, 12, 14, 0.62) 40%, rgba(10, 12, 14, 0.92) 100%),
+      linear-gradient(90deg, rgba(10, 12, 14, 0.5) 0%, rgba(10, 12, 14, 0.3) 100%);
+  }
+
+  .hero-tagline-lead {
+    color: var(--brass-bright);
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.65);
+  }
+
+  .hero-tagline-sub {
+    color: var(--parchment);
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
   }
 }

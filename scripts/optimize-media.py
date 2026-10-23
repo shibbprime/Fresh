@@ -42,6 +42,11 @@ GALLERY = [
     "gallery-burnsville-home-theater.jpg",
     "gallery-credit-river-new-roof.jpg",
     "gallery-credit-river-craftsman-exterior.jpg",
+    "gallery-commercial-exterior.jpg",
+    "gallery-stone-masonry.jpg",
+    "gallery-bloomington-whole-home-kitchen.jpg",
+    "gallery-new-market-covered-porch.jpg",
+    "gallery-apple-valley-siding-sunroom.jpg",
 ]
 
 
